@@ -35,6 +35,9 @@
                 if(($x != 0) && ($y != 0)){
                     if(str_contains(strval($result), '43')){
                         echo "<td class='cuatrotres'>$result</td>";
+                    }
+                    if(($result%$result == 0) && ($result%1 == 0)){
+                        echo "<td class='primo'>$result</td>";
                     }else{
                         echo "<td class='row'>$result</td>";
                     }
